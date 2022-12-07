@@ -1,0 +1,56 @@
+ <!-- 22B05A1213 -->
+ <!-- Demonstrate the various concepts with respect to GIT/GITHUB -->
+ <!DOCTYPE html>
+ <html lang="en"> 
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>GitHub</title>
+    </head>
+
+    <body>
+        <h3><u>How to Launch Git in Windows:  </u></h3>
+        Git has two modes of use - a bash scripting shell (or command line) and a graphical user interface(GUI).
+        To launch Git Bash open the windows Start menu, type git bash and press Enter(or click the application icon).
+        <br><br>
+
+        <h3><u>Create Repository:</u></h3>
+        You need a GitHub username and password for this next step.
+        Go to your GitHub account and Choose create repository option and make your account either public or private.
+        Add name to the file and enter your text then commit the changes eventually,
+        <br><br>
+
+        <h3><u>Git Configuration(Username and Email):</u></h3> 
+        Configure your local Git installationto to use tour Githun credentials by entering the following:
+        <div><b>>> gitconfig --global user.name "hemamutyala29"</b></div>
+        <div><b>>> gitconfig --global user.email "hemamutyala29@gmail.com"</b></div>
+        <br><br>
+
+        <h3><u>Clone a GitHub Repository:</u></h3>
+        Go to your repository on GitHub. In the top right above the list of files,openthe Clone or download drop-down menu.
+        Copy the URL for cloning over HTTPS.
+        Switch to your Powershell window, and enter the following:
+        <div><b>>> git clone repository_url</b></div>
+        <br><br>
+
+        <h3><u>Pushing Local Files to Repository:</u></h3>
+        Add your new file to the local project:
+        git add GIT1.html
+        Run git status again to make that GIT1.html file has been added. Next,commit the changes to the local project:
+        git commit -m "Gitexp1"
+        Finally, push the changes to the remote GitHub repository:
+        <div><b>>> git push</b></div>
+        <br><br>
+        
+        <h3><u>Removing from a Git repository:</u></h3>
+        To delete a git remote using the command line,first cd into the directory of the repository which contains the remote:
+        To list the available remotes and their URLs in the folder,type git remote -v:
+        Delete a remote with following command:
+        <div><b>>> git remote remove[remote name]</b></div> 
+        <br><br>
+
+    </body>
+
+ </html>
